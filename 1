@@ -1,0 +1,56 @@
+export default function IgnisPaw() {
+  return (
+    <div className="min-h-screen bg-[#f5f2ec] text-black font-sans">
+      <header className="bg-white border-b border-black py-4 px-6 flex items-center justify-between">
+        <h1 className="text-2xl font-bold tracking-wide">Ignis Paw</h1>
+        <nav className="space-x-6">
+          <a href="#home" className="hover:underline">Home</a>
+          <a href="#shop" className="hover:underline">Shop</a>
+          <a href="#about" className="hover:underline">About</a>
+          <a href="#contact" className="hover:underline">Contact</a>
+        </nav>
+      </header>
+
+      <section id="home" className="text-center py-20 px-4">
+        <img src="/logo.png" alt="Ignis Paw Logo" className="mx-auto w-32 h-32 mb-6" />
+        <h2 className="text-3xl font-semibold mb-2">For the paw you love.</h2>
+        <p className="text-lg text-black/70 max-w-xl mx-auto">
+          High-quality essentials and stylish comfort for your furry companions.
+        </p>
+      </section>
+
+      <section id="shop" className="py-16 px-6 bg-[#fffdf9]">
+        <h3 className="text-2xl font-bold text-center mb-10">Shop Categories</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="bg-white border border-black p-4 rounded-2xl text-center shadow">
+            <p className="font-semibold">Toys</p>
+          </div>
+          <div className="bg-white border border-black p-4 rounded-2xl text-center shadow">
+            <p className="font-semibold">Snacks</p>
+          </div>
+          <div className="bg-white border border-black p-4 rounded-2xl text-center shadow">
+            <p className="font-semibold">Bedding</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="py-16 px-6 text-center">
+        <h3 className="text-2xl font-bold mb-4">About Ignis Paw</h3>
+        <p className="max-w-2xl mx-auto text-black/70">
+          Ignis Paw is a stylish pet store offering quality products for pets with personality.
+          Driven by love and a minimalist aesthetic, we focus on comfort, care, and character.
+        </p>
+      </section>
+
+      <section id="contact" className="py-16 px-6 bg-[#f5f2ec] text-center">
+        <h3 className="text-2xl font-bold mb-4">Contact Us</h3>
+        <p className="text-black/70">Email: hello@ignispaw.com</p>
+        <p className="text-black/70">Instagram: @ignispaw</p>
+      </section>
+
+      <footer className="text-center py-6 border-t border-black bg-white text-black">
+        <p className="text-sm">&copy; {new Date().getFullYear()} Ignis Paw. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+}
